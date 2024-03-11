@@ -40,8 +40,8 @@ const ShoppingList = () => {
         <h1>Shopping List</h1>
       </div>
       <div className="list-container">
-        <div className="column-headers">
-          <span>...column headers...</span>
+
+          <hr/>
         </div>
 
         {isLoading ? (
@@ -62,7 +62,7 @@ const ShoppingList = () => {
             </div>
           ))
         )}
-      </div>
+      <hr/>
       <div className="add-item">
         <input
           type="text"
