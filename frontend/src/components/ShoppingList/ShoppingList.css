@@ -1,0 +1,91 @@
+.shopping-list {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  background-image: url('https://brand.leaddesk.com/wp-content/uploads/2023/03/symbol-dark-blue-2-1.jpg');
+  background-size: cover;
+  border: 1px dashed #ccc;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.list-container {
+  margin-bottom: 20px;
+}
+
+.column-headers {
+  display: none;
+}
+
+.list-item,
+.add-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.list-item input,
+.add-item input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.list-item button,
+.add-item button {
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-item button:hover,
+.add-item button:hover {
+  background-color: #e7e7e7;
+}
+
+.loader {
+  width: fit-content;
+  margin: auto;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding-bottom: 8px;
+  background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
+  animation: l2 2s linear infinite;
+}
+
+.loader:before {
+  content: 'Loading...';
+}
+
+@keyframes l2 {
+  to {
+    background-size: 100% 3px;
+  }
+}
